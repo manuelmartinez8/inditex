@@ -1,11 +1,11 @@
 # Spring Boot H2 Database CRUD example: Building Rest API with Spring Data JPA
 #REALIZADO POR MANUEL MARTINEZ
-De antemano me disculpo por no finalizar los test y el response como fue solicitado pero por motivos de tiempo 
-y de mi actual trabajo no puedo continuar desarrollando el test, pero estuvo muy interesante.
-Muchas gracias.
+ 
 
  
 En este proyecto se estara construyendo una aplicacion en Spring Boot Rest con Maven usando Spring Data JPA para interactuar con una base de datos H2 
+Cabe destacar que se implemento Arquitectura Hexagonal y DDD para una adecuacion al negocio.
+El codigo se trato de hacer bastante limpio, de modo que las clases solo tengan una responsabilidad unica, dandole al proyecto la posibilidad de escalabilidad a futuro.
 
 Technology
 Java 8
