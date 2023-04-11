@@ -11,11 +11,11 @@ public class PricesResponse {
     /*: identificador de producto,
      identificador de cadena, tarifa a aplicar,
       fechas de aplicación y precio final a aplicar.*/
-    private String productId;
-    private String brandId;
-    private BigDecimal rate;
+    private int productId;
+    private int brandId;
+    private BigDecimal pricefinal;
     private LocalDateTime dateApplication;
-    private BigDecimal finalPrices;
+    private String rate;
 
 
 }

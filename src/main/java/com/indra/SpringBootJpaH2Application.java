@@ -1,6 +1,6 @@
 package com.indra;
 
-import com.indra.adapter.request.PricesRequest;
+import com.indra.adapter.request.PricesDTO;
 import com.indra.configuration.PricesConverter;
 import com.indra.domain.model.BrandEntity;
 import com.indra.domain.repository.BrandRepository;
@@ -34,7 +34,7 @@ public class SpringBootJpaH2Application {
 		BrandEntity brand = new BrandEntity(1, "ZARA");
 		brandRepository.save(brand);
 
-
+		//CARGA DE DATOS A UTILIZAR
 		LocalDateTime startDate1 = LocalDateTime.parse("2020-06-14T00:00:00");
 		LocalDateTime startDate2 = LocalDateTime.parse("2020-06-14T15:00:00");
 		LocalDateTime startDate3 = LocalDateTime.parse("2020-06-15T00:00:00");
@@ -45,10 +45,10 @@ public class SpringBootJpaH2Application {
 		LocalDateTime end_date3 = LocalDateTime.parse("2020-06-15T11:00:00");
 		LocalDateTime end_date4 = LocalDateTime.parse("2020-12-31T23:59:59");
 
-		PricesRequest prices1 = new PricesRequest(1,startDate1,end_date1,"1", 35455,"0",new BigDecimal(36.50),"EUR");
-		PricesRequest prices2 = new PricesRequest(1,startDate2,end_date2,"2", 35455,"1",new BigDecimal(25.45),"EUR");
-		PricesRequest prices3 = new PricesRequest(1,startDate3,end_date3,"3", 35455,"1",new BigDecimal(30.50),"EUR");
-		PricesRequest prices4 = new PricesRequest(1,startDate4,end_date4,"4", 35555,"1",new BigDecimal(38.95),"EUR");
+		PricesDTO prices1 = new PricesDTO(1,startDate1,end_date1,"1", 35455,"0",new BigDecimal(36.5),"EUR");
+		PricesDTO prices2 = new PricesDTO(1,startDate2,end_date2,"2", 35455,"1",new BigDecimal(25.45),"EUR");
+		PricesDTO prices3 = new PricesDTO(1,startDate3,end_date3,"3", 35455,"1",new BigDecimal(30.50),"EUR");
+		PricesDTO prices4 = new PricesDTO(1,startDate4,end_date4,"4", 35555,"1",new BigDecimal(38.95),"EUR");
 
 		repository.save(PricesConverter.priceRequestToEntity(prices1));
 		repository.save(PricesConverter.priceRequestToEntity(prices2));

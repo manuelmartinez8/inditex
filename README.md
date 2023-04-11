@@ -26,7 +26,7 @@ Let’s open H2 console with url: http://localhost:8080/h2-ui:
 
 ENDPOINT URL:
 GET
-http://localhost:8080/v1/prices
+http://localhost:8080/v1/price
 
 ENDPOINT REQUEST:
 {

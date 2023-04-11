@@ -1,9 +1,6 @@
 package com.indra.domain.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -16,6 +13,7 @@ import java.util.Date;
 @Table(name = "prices")
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class PricesEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
